@@ -23,6 +23,10 @@
         .container {
             animation: fadeIn 3s ease-in-out;
             z-index: 1;
+            background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
@@ -30,7 +34,7 @@
             font-size: 4rem;
             margin: 0;
             animation: fadeIn 3s ease-in-out;
-            color: #000; /* Черный цвет текста */
+            color: #000;
             font-weight: 700;
         }
 
@@ -39,7 +43,7 @@
             font-size: 1.5rem;
             margin: 20px;
             animation: fadeIn 5s ease-in-out;
-            color: #000; /* Черный цвет текста */
+            color: #000;
             font-weight: 600;
         }
 
@@ -50,7 +54,7 @@
             margin-top: 20px;
             opacity: 0;
             animation: messageShow 4s ease-in-out forwards;
-            color: #000; /* Черный цвет текста */
+            color: #000;
             font-weight: 300;
         }
 
@@ -59,7 +63,7 @@
             font-size: 1.2rem;
             display: block;
             margin-top: 30px;
-            color: #000; /* Черный цвет текста */
+            color: #000;
             font-weight: 300;
         }
 
@@ -106,7 +110,6 @@
                 font-size: 1rem;
             }
         }
-
     </style>
 </head>
 <body>
@@ -119,8 +122,11 @@
 
     <div class="hearts"></div>
 
-    <!-- Вставка видео с музыкой -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9jm1g8A0A7M?autoplay=1&loop=1&playlist=9jm1g8A0A7M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Вставка музыки с вашей ссылки -->
+    <audio autoplay loop>
+        <source src="https://cdn2.sefon.pro/download/Z4yMWBehku13SwDB_iBpfQ/1743333954/151/%D0%A2%D0%B1%D0%B8%D0%BB%D0%B8%20%D0%A2%D0%B5%D0%BF%D0%BB%D1%8B%D0%B9%20-%20%D0%9D%D0%B5%20%D0%A3%D1%85%D0%BE%D0%B4%D0%B8%20(ft.%20%D0%A5%D0%A2%D0%91).mp3" type="audio/mp3">
+        Ваш браузер не поддерживает аудио.
+    </audio>
 
     <script>
         function createHeart() {
